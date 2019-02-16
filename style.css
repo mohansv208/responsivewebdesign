@@ -1,0 +1,44 @@
+img{
+  border-radius: 50%;
+  width: 200px;
+  max-height: 100%;
+}
+img:hover{
+  width: 250px;
+}
+.portfolio{
+  border: 2px solid mediumseagreen;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub {
+  background-color: rgba(255,99,71,0.2);
+  text-align: center;
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 10px;
+}
+.sub h1{
+  font-size: 20px;
+}
+.sub p{
+  font-size: 15px;
+}
+@media screen and (min-width:426px) and (max-width:720px) {
+  .portfolio{
+    border:  2px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .portfolio{
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+}
